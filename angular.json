@@ -26,7 +26,7 @@
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "./styles"]
+                "./src/styles"]
             },
             "scripts": []
           },
@@ -127,11 +127,14 @@
   "defaultProject": "angular-starter",
   "schematics": {
     "@schematics/angular:component": {
-      "prefix": "app",
+      "prefix": "bwm",
       "styleext": "scss"
     },
     "@schematics/angular:directive": {
-      "prefix": "app"
+      "prefix": "bwm",
+      "spec": {
+        "component": false
+      }
     }
   }
 }
